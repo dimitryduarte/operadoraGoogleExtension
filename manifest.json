@@ -2,7 +2,7 @@
  "manifest_version": 2,
 "name": "Pesquisar Operadora",
  "description": "Pesquisa de operadora por telefone",
- "version": "4.0",
+ "version": "5.0",
  "browser_action": {
      "default_icon": "img.png",
      "default_title": "Qual Operadora (Por Dimitry)",
@@ -15,5 +15,9 @@
 	    ],
 	    "js": ["jquery-3.3.1.js","content.js"]
 	  }
-	]
+	],
+"permissions": [
+    "http://use.startpdv.com.br/",
+    "http://192.168.0.239/"
+  ]
 }

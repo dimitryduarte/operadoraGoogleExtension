@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html>
-<script src="jquery-3.3.1.js"></script>
-<script type="text/javascript">
-	function pesquisar(){
-		var telefone = $('#telefone').val();
-		console.log(telefone);
-		var request = "http://192.168.0.239/operadora.php?tel1="+telefone;
-		console.log(request);
-		$.post(request, function(retorno){
-			objretorno = json.decode(retorno);
-			$('#resposta').val() = objretorno[2];
-		});
-	}
 
-</script>
+<script src="jquery-3.3.1.js"></script>
+<script src="content.js"></script>
 <head>
 	<title>Pesquisar Operadora</title>
 </head>
 <body>
 	<label>Informe o Telefone:</label>
 	<input type="text" name="telefone" id="telefone">
-	<input type="button" name="pesquisar" id="pesquisar" value="Pesquisar" onclick="pesquisar();">
+	<input type="button" name="pesquisar" id="pesquisar" value="Pesquisar">
 	<label id="resposta"></label>
 </body>
 </html>
